@@ -1,0 +1,43 @@
+{
+    "cs50": {
+        "debug": {
+            "@name": null,
+            "@pid": null,
+            "@proxy": null,
+            "@runner": null
+        },
+        "simple": {
+            "settings": {
+                "@revision": 6
+            }
+        }
+    },
+    "general": {
+        "@stripws": true
+    },
+    "language": {
+        "@undeclaredVars": true,
+        "tern_defs": {
+            "json()": {
+                "browser": {
+                    "enabled": true
+                },
+                "ecma5": {
+                    "enabled": true
+                },
+                "jQuery": {
+                    "enabled": true
+                }
+            }
+        }
+    },
+    "python": {
+        "@path": "/usr/local/lib/python3.7/site-packages"
+    },
+    "run": {
+        "configs": {
+            "@inited": "true",
+            "json()": {}
+        }
+    }
+}
