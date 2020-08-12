@@ -1,21 +1,3 @@
-./credit 
-make credit 
-./credit 
-./credit 
-make credit 
-./credit 
-make credit 
-./credit 
-./credit 
-make credit 
-./credit 
-make credit 
-./credit 
-make credit 
-./credit 
-./credit 
-make credit 
-./credit 
 make credit 
 ./credit 
 ./credit 
@@ -503,5 +485,18 @@ cd pset3/plurality/
 ls
 check50 cs50/problems/2020/x/plurality --local
 submit50 cs50/problems/2020/x/plurality
+cd
+git status
+git add .
+git commit -m"Completed Plurality assignment"
+cd pset3
+ls
+cd pset3
+ls
+mkdir tideman
+cd tideman
+wget https://cdn.cs50.net/2019/fall/psets/3/tideman/tideman.c
+ls
+open tideman.c 
 cd
 git status
