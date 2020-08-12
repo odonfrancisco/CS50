@@ -53,12 +53,13 @@ int main(int argc, string argv[])
         string name = get_string("Vote: ");
 
         // Check for invalid vote
+            // && execute vote function if not invalid
         if (!vote(name))
         {
             printf("Invalid vote.\n");
         }
     }
-
+    
     // Display winner of election
     print_winner();
 }
@@ -66,14 +67,33 @@ int main(int argc, string argv[])
 // Update vote totals given a new vote
 bool vote(string name)
 {
-    // TODO
+    for(int i=0; i<candidate_count; i++){
+        if(strcmp(candidates[i].name, name) == 0){
+            candidates[i].votes++;
+            return true;
+        }
+    }
     return false;
 }
 
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
-    // TODO
+    int mostVotes = 0;
+    int winnerAdded = 0;
+    string winners[candidate_count];
+    for(int i=0; i<candidate_count; i++){
+        if( mostVotes <= candidates[i].votes){
+            mostVotes = candidates[i].votes;
+            winners[winnerAdded] = candidates[i].name;
+            winnerAdded++;
+        }
+    }
+    
+    for(int i=0; i<winnerAdded; i++){
+        printf("%s\n", winners[i]);
+    }
+    
     return;
 }
 

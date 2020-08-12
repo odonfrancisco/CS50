@@ -1,61 +1,3 @@
-make mario 
-make mario 
-./mario 
-make mario 
-./mario 
-make mario 
-./mario 
-make mario 
-./mario 
-./mario 
-make mario 
-./mario 
-./mario 
-./mario 
-check50 ./mario
-check50 ./mario.c
-ls
-check50 ./mario/more
-pwd
-check50 home/ubuntu/pset1/mario
-check50 help
-check50 --help
-check50 mario
-check50 /home/ubuntu/pset1/mario
-check50 home/ubuntu/pset1/mario
-check50 ubuntu/pset1/mario
-check50 pset1/mario
-check50
-check50 mario/more
-check50 home/ubuntu/pset1/mario/more
-check50 home/ubuntu/pset1/mario.c
-cs50/problems/2018/x/mario/less
-cs50/problems/2018/x/mario/more
-cd
-cs50/problems/2018/x/mario/less
-pwd
-l
-ls
-cd pset1
-ls
-mkdir credit
-cd credit/
-touch credit.c
-open credit.c 
-make credit 
-make credit 
-./credit 
-make credit 
-make credit 
-make credit 
-make credit 
-make credit 
-make credit 
-make credit 
-make credit 
-./credit 
-make credit 
-make credit 
 ./credit 
 make credit 
 ./credit 
@@ -513,3 +455,53 @@ git remote add origin https://github.com/odonfrancisco/CS50.git
 git push origin master
 git push -u origin master
 git 
+git add .
+git commit -m"first commit including pset1, pset2 & part of pset3"
+git push origin master
+ls
+cd pset3
+ls
+cd plurality/
+ls
+make plurality 
+./plurality 
+./plurality emma robert
+make plurality 
+./plurality emma robert
+make plurality 
+make plurality 
+./plurality emma robert
+./plurality emma robert
+make plurality 
+./plurality emma robert
+debug50 ./plurality
+debug50 ./plurality emma robert
+./plurality emma robert
+make plurality 
+./plurality emma robert
+./plurality emma robert
+u
+./plurality emma robert
+make plurality 
+./plurality emma robert
+make plurality 
+make plurality 
+make plurality 
+make plurality 
+make plurality 
+./plurality emma robert
+make plurality 
+./plurality emma robert
+./plurality emma robert
+make plurality 
+./plurality emma robert
+check50 cs50/problems/2020/x/plurality --local
+make plurality 
+check50 cs50/problems/2020/x/plurality --local
+ls
+cd pset3/plurality/
+ls
+check50 cs50/problems/2020/x/plurality --local
+submit50 cs50/problems/2020/x/plurality
+cd
+git status

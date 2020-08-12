@@ -1685,3 +1685,475 @@ SENDING: Content-Length:552
 {"thread":"1","frames":[{"level":"0","addr":"0x000000000040076f","func":"main","file":"substitution.c","fullname":"/home/ubuntu/pset2/substitution/substitution.c","line":"27","exists":true,"args":[{"name":"argc","type":"int","value":"2","objname":"var4","numchild":"0"},{"name":"argv","type":"string *","value":"0x7fffffffe6b8","address":140737488348856,"objname":"var3","numchild":"1"}],"locals":[{"name":"sum","type":"int","value":"2847","objname":"var2","numchild":"0"},{"name":"length","type":"int","value":"26","objname":"var1","numchild":"0"}]}]}
 GDB: ^done
 SIGINT
+
+
+Sun Aug 09 2020 20:50:52 GMT+0000 (Coordinated Universal Time)1-target-select remote localhost:15470
+
+GDB: =thread-group-added,id="i1"
+GDB: ~"Reading symbols from ./plurality..."
+GDB: ~"done.\n"
+GDB: =tsv-created,name="trace_timestamp",initial="0"\n
+GDB: =thread-group-started,id="i1",pid="2003"
+GDB: =thread-created,id="1",group-id="i1"
+GDB: ~"Reading /lib64/ld-linux-x86-64.so.2 from remote target...\n"
+GDB: &"warning: File transfers from remote targets can be slow. Use \"set sysroot\" to access files locally instead.\n"
+GDB: ~"Reading /lib64/ld-linux-x86-64.so.2 from remote target...\n"
+GDB: =library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="target:/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7dd5f10",to="0x00007ffff7df4b20"}]
+GDB: ~"Reading /lib64/ld-2.27.so from remote target...\n"
+GDB: ~"Reading /lib64/.debug/ld-2.27.so from remote target...\n"
+GDB: ~"0x00007ffff7dd6090 in ?? () from target:/lib64/ld-linux-x86-64.so.2\n"
+GDB: *stopped,frame={addr="0x00007ffff7dd6090",func="??",args=[],from="target:/lib64/ld-linux-x86-64.so.2"},thread-id="1",stopped-threads="all",core="14"
+GDB: 1^connected
+2set breakpoint condition-evaluation host
+
+GDB: &"set breakpoint condition-evaluation host\n"
+GDB: =cmd-param-changed,param="breakpoint condition-evaluation",value="host"
+GDB: 2^done
+PROXY: server connected
+SENDING: Content-Length:9
+
+"connect"
+PLUGIN: Content-Length:29
+
+{"command":"bp-list","_id":1}
+3-break-list 
+
+GDB: 3^done,BreakpointTable={nr_rows="0",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[]}
+SENDING: Content-Length:510
+
+{"_seq":"3","state":"done","status":{"BreakpointTable":{"nr_rows":"0","nr_cols":"6","hdr":[{"width":"7","alignment":"-1","col_name":"number","colhdr":"Num"},{"width":"14","alignment":"-1","col_name":"type","colhdr":"Type"},{"width":"4","alignment":"-1","col_name":"disp","colhdr":"Disp"},{"width":"3","alignment":"-1","col_name":"enabled","colhdr":"Enb"},{"width":"10","alignment":"-1","col_name":"addr","colhdr":"Address"},{"width":"40","alignment":"2","col_name":"what","colhdr":"What"}],"body":[]}},"_id":1}
+PLUGIN: Content-Length:240
+
+{"path":"/pset3/plurality/plurality.c","line":68,"column":4,"text":"plurality.c","content":"    for(int i=0; i<MAX; i++){","time":1597006244323,"enabled":true,"fullpath":"/home/ubuntu/pset3/plurality/plurality.c","command":"bp-set","_id":2}
+4-break-insert "/home/ubuntu/pset3/plurality/plurality.c:69"
+
+GDB: 4^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000000000040081c",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="69",thread-groups=["i1"],times="0",original-location="/home/ubuntu/pset3/plurality/plurality.c:69"}
+SENDING: Content-Length:346
+
+{"_seq":"4","state":"done","status":{"bkpt":{"number":"1","type":"breakpoint","disp":"keep","enabled":"y","addr":"0x000000000040081c","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"69","thread-groups":["i1"],"times":"0","original-location":"/home/ubuntu/pset3/plurality/plurality.c:69"}},"_id":2}
+PLUGIN: Content-Length:30
+
+{"command":"continue","_id":3}
+5-exec-continue 
+
+GDB: 5^running
+SENDING: Content-Length:50
+
+{"_seq":"5","state":"running","status":{},"_id":3}
+GDB: *running,thread-id="all"
+GDB: ~"Reading /lib/x86_64-linux-gnu/libcrypt.so.1 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libcrypt.so.1",target-name="/lib/x86_64-linux-gnu/libcrypt.so.1",host-name="target:/lib/x86_64-linux-gnu/libcrypt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7b9dd50",to="0x00007ffff7ba38b8"}]
+GDB: ~"Reading /usr/lib/libcs50.so.10 from remote target...\n"
+GDB: =library-loaded,id="/usr/lib/libcs50.so.10",target-name="/usr/lib/libcs50.so.10",host-name="target:/usr/lib/libcs50.so.10",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7999c40",to="0x00007ffff799abb9"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libm.so.6 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="target:/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7606a80",to="0x00007ffff76c52f5"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libc.so.6 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="target:/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff722b2d0",to="0x00007ffff73a3c3c"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libcrypt-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/libcrypt-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/libm-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/libm-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/libc-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/libc-2.27.so from remote target...\n"
+
+Child exited with status 1
+
+GDB: ~"[Inferior 1 (process 2003) exited with code 01]\n"
+GDB: =thread-group-exited,id="i1",exit-code="01"
+GDB: *stopped,reason="exited",exit-code="01"
+
+
+Sun Aug 09 2020 20:51:14 GMT+0000 (Coordinated Universal Time)1-target-select remote localhost:15470
+
+GDB: =thread-group-added,id="i1"
+GDB: ~"Reading symbols from ./plurality..."
+GDB: ~"done.\n"
+GDB: =tsv-created,name="trace_timestamp",initial="0"\n
+GDB: =thread-group-started,id="i1",pid="2112"
+GDB: =thread-created,id="1",group-id="i1"
+GDB: ~"Reading /lib64/ld-linux-x86-64.so.2 from remote target...\n"
+GDB: &"warning: File transfers from remote targets can be slow. Use \"set sysroot\" to access files locally instead.\n"
+GDB: ~"Reading /lib64/ld-linux-x86-64.so.2 from remote target...\n"
+GDB: =library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="target:/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7dd5f10",to="0x00007ffff7df4b20"}]
+GDB: ~"Reading /lib64/ld-2.27.so from remote target...\n"
+GDB: ~"Reading /lib64/.debug/ld-2.27.so from remote target...\n"
+GDB: ~"0x00007ffff7dd6090 in ?? () from target:/lib64/ld-linux-x86-64.so.2\n"
+GDB: *stopped,frame={addr="0x00007ffff7dd6090",func="??",args=[],from="target:/lib64/ld-linux-x86-64.so.2"},thread-id="1",stopped-threads="all",core="1"
+GDB: 1^connected
+2set breakpoint condition-evaluation host
+
+GDB: &"set breakpoint condition-evaluation host\n"
+GDB: =cmd-param-changed,param="breakpoint condition-evaluation",value="host"
+GDB: 2^done
+PROXY: server connected
+SENDING: Content-Length:9
+
+"connect"
+PLUGIN: Content-Length:29
+
+{"command":"bp-list","_id":1}
+3-break-list 
+
+GDB: 3^done,BreakpointTable={nr_rows="0",nr_cols="6",hdr=[{width="7",alignment="-1",col_name="number",colhdr="Num"},{width="14",alignment="-1",col_name="type",colhdr="Type"},{width="4",alignment="-1",col_name="disp",colhdr="Disp"},{width="3",alignment="-1",col_name="enabled",colhdr="Enb"},{width="10",alignment="-1",col_name="addr",colhdr="Address"},{width="40",alignment="2",col_name="what",colhdr="What"}],body=[]}
+SENDING: Content-Length:510
+
+{"_seq":"3","state":"done","status":{"BreakpointTable":{"nr_rows":"0","nr_cols":"6","hdr":[{"width":"7","alignment":"-1","col_name":"number","colhdr":"Num"},{"width":"14","alignment":"-1","col_name":"type","colhdr":"Type"},{"width":"4","alignment":"-1","col_name":"disp","colhdr":"Disp"},{"width":"3","alignment":"-1","col_name":"enabled","colhdr":"Enb"},{"width":"10","alignment":"-1","col_name":"addr","colhdr":"Address"},{"width":"40","alignment":"2","col_name":"what","colhdr":"What"}],"body":[]}},"_id":1}
+PLUGIN: Content-Length:240
+
+{"path":"/pset3/plurality/plurality.c","line":68,"column":4,"text":"plurality.c","content":"    for(int i=0; i<MAX; i++){","time":1597006267934,"enabled":true,"fullpath":"/home/ubuntu/pset3/plurality/plurality.c","command":"bp-set","_id":2}
+4-break-insert "/home/ubuntu/pset3/plurality/plurality.c:69"
+
+GDB: 4^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000000000040081c",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="69",thread-groups=["i1"],times="0",original-location="/home/ubuntu/pset3/plurality/plurality.c:69"}
+SENDING: Content-Length:346
+
+{"_seq":"4","state":"done","status":{"bkpt":{"number":"1","type":"breakpoint","disp":"keep","enabled":"y","addr":"0x000000000040081c","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"69","thread-groups":["i1"],"times":"0","original-location":"/home/ubuntu/pset3/plurality/plurality.c:69"}},"_id":2}
+PLUGIN: Content-Length:30
+
+{"command":"continue","_id":3}
+5-exec-continue 
+
+GDB: 5^running
+SENDING: Content-Length:50
+
+{"_seq":"5","state":"running","status":{},"_id":3}
+GDB: *running,thread-id="all"
+GDB: ~"Reading /lib/x86_64-linux-gnu/libcrypt.so.1 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libcrypt.so.1",target-name="/lib/x86_64-linux-gnu/libcrypt.so.1",host-name="target:/lib/x86_64-linux-gnu/libcrypt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7b9dd50",to="0x00007ffff7ba38b8"}]
+GDB: ~"Reading /usr/lib/libcs50.so.10 from remote target...\n"
+GDB: =library-loaded,id="/usr/lib/libcs50.so.10",target-name="/usr/lib/libcs50.so.10",host-name="target:/usr/lib/libcs50.so.10",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7999c40",to="0x00007ffff799abb9"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libm.so.6 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="target:/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7606a80",to="0x00007ffff76c52f5"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libc.so.6 from remote target...\n"
+GDB: =library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="target:/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff722b2d0",to="0x00007ffff73a3c3c"}]
+GDB: ~"Reading /lib/x86_64-linux-gnu/libcrypt-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/libcrypt-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/libm-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/libm-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/libc-2.27.so from remote target...\n"
+GDB: ~"Reading /lib/x86_64-linux-gnu/.debug/libc-2.27.so from remote target...\n"
+GDB: =breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000000000040081c",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="69",thread-groups=["i1"],times="1",original-location="/home/ubuntu/pset3/plurality/plurality.c:69"}
+GDB: ~"\n"
+GDB: ~"Breakpoint 1, vote (name=0x6032b0 \"chreast\") at plurality.c:69\n"
+GDB: ~"69\t    for(int i=0; i<MAX; i++){\n"
+GDB: *stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x000000000040081c",func="vote",args=[{name="name",value="0x6032b0 \"chreast\""}],file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="69"},thread-id="1",stopped-threads="all",core="13"
+6-stack-list-frames 0 50
+
+GDB: 6^done,stack=[frame={level="0",addr="0x000000000040081c",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="69"},frame={level="1",addr="0x00000000004007cc",func="main",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="56"}]
+7-stack-list-arguments --simple-values 0 50
+
+GDB: 7^done,stack-args=[frame={level="0",args=[{name="name",type="string",value="0x6032b0 \"chreast\""}]},frame={level="1",args=[{name="argc",type="int",value="3"},{name="argv",type="string *",value="0x7fffffffe6c8"}]}]
+8-stack-list-locals --thread 1 --frame 1 --simple-values
+
+GDB: 8^done,locals=[{name="name",type="string",value="0x6032b0 \"chreast\""},{name="i",type="int",value="0"},{name="voter_count",type="int",value="4"}]
+9-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 9^done,locals=[{name="i",type="int",value="0"}]
+10-var-update --all-values *
+
+GDB: 10^done,changelist=[]
+11-var-create - * voter_count
+
+GDB: 11^error,msg="-var-create: unable to create variable object"
+12-var-create - * i
+
+GDB: 12^done,name="var2",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+13-var-create - * name
+
+GDB: 13^done,name="var3",numchild="1",value="0x6032b0 \"chreast\"",type="string",thread-id="1",has_more="0"
+14-var-create - * argv
+
+GDB: 14^error,msg="-var-create: unable to create variable object"
+15-var-create - * argc
+
+GDB: 15^error,msg="-var-create: unable to create variable object"
+16-var-create - * i
+
+GDB: 16^done,name="var6",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+17-var-create - * name
+
+GDB: 17^done,name="var7",numchild="1",value="0x6032b0 \"chreast\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:883
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000040081c","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"69","exists":true,"args":[{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var7","numchild":"1"}],"locals":[{"name":"i","type":"int","value":"0","objname":"var6","numchild":"0"}]},{"level":"1","addr":"0x00000000004007cc","func":"main","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"56","exists":true,"args":[{"name":"argc","type":"int","value":"3"},{"name":"argv","type":"string *","value":"0x7fffffffe6c8","address":140737488348872}],"locals":[{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var3","numchild":"1"},{"name":"i","type":"int","value":"0","objname":"var2","numchild":"0"},{"name":"voter_count","type":"int","value":"4"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:26
+
+{"command":"next","_id":4}
+18-exec-next 
+
+GDB: 18^running
+SENDING: Content-Length:51
+
+{"_seq":"18","state":"running","status":{},"_id":4}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x000000000040082d",func="vote",args=[{name="name",value="0x6032b0 \"chreast\""}],file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="70"},thread-id="1",stopped-threads="all",core="13"
+19-stack-list-frames 0 50
+
+GDB: 19^done,stack=[frame={level="0",addr="0x000000000040082d",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="70"},frame={level="1",addr="0x00000000004007cc",func="main",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="56"}]
+20-stack-list-arguments --simple-values 0 50
+
+GDB: 20^done,stack-args=[frame={level="0",args=[{name="name",type="string",value="0x6032b0 \"chreast\""}]},frame={level="1",args=[{name="argc",type="int",value="3"},{name="argv",type="string *",value="0x7fffffffe6c8"}]}]
+21-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 21^done,locals=[{name="i",type="int",value="0"}]
+22-var-update --all-values *
+
+GDB: 22^done,changelist=[]
+23-var-create - * i
+
+GDB: 23^done,name="var8",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+24-var-create - * name
+
+GDB: 24^done,name="var9",numchild="1",value="0x6032b0 \"chreast\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:832
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000040082d","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"70","exists":true,"args":[{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var9","numchild":"1"}],"locals":[{"name":"i","type":"int","value":"0","objname":"var8","numchild":"0"}]},{"level":"1","addr":"0x00000000004007cc","func":"main","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"56","exists":true,"args":[{"name":"argc","type":"int","value":"3"},{"name":"argc","type":"int","value":"3"}],"locals":[{"name":"argc","type":"int","value":"3"},{"name":"i","type":"int","value":"0","objname":"var2","numchild":"0"},{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var3","numchild":"1"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:26
+
+{"command":"next","_id":5}
+25-exec-next 
+
+GDB: 25^running
+SENDING: Content-Length:51
+
+{"_seq":"25","state":"running","status":{},"_id":5}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x000000000040087e",func="vote",args=[{name="name",value="0x6032b0 \"chreast\""}],file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="74"},thread-id="1",stopped-threads="all",core="13"
+26-stack-list-frames 0 50
+
+GDB: 26^done,stack=[frame={level="0",addr="0x000000000040087e",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="74"},frame={level="1",addr="0x00000000004007cc",func="main",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="56"}]
+27-stack-list-arguments --simple-values 0 50
+
+GDB: 27^done,stack-args=[frame={level="0",args=[{name="name",type="string",value="0x6032b0 \"chreast\""}]},frame={level="1",args=[{name="argc",type="int",value="3"},{name="argv",type="string *",value="0x7fffffffe6c8"}]}]
+28-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 28^done,locals=[{name="i",type="int",value="0"}]
+29-var-update --all-values *
+
+GDB: 29^done,changelist=[]
+30-var-create - * i
+
+GDB: 30^done,name="var10",numchild="0",value="0",type="int",thread-id="1",has_more="0"
+31-var-create - * name
+
+GDB: 31^done,name="var11",numchild="1",value="0x6032b0 \"chreast\"",type="string",thread-id="1",has_more="0"
+-stack-select-frame 0
+
+SENDING: Content-Length:834
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000040087e","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"74","exists":true,"args":[{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var11","numchild":"1"}],"locals":[{"name":"i","type":"int","value":"0","objname":"var10","numchild":"0"}]},{"level":"1","addr":"0x00000000004007cc","func":"main","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"56","exists":true,"args":[{"name":"argc","type":"int","value":"3"},{"name":"argc","type":"int","value":"3"}],"locals":[{"name":"argc","type":"int","value":"3"},{"name":"i","type":"int","value":"0","objname":"var2","numchild":"0"},{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var3","numchild":"1"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:26
+
+{"command":"next","_id":6}
+32-exec-next 
+
+GDB: 32^running
+SENDING: Content-Length:51
+
+{"_seq":"32","state":"running","status":{},"_id":6}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x0000000000400883",func="vote",args=[{name="name",value="0x6032b0 \"chreast\""}],file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="69"},thread-id="1",stopped-threads="all",core="13"
+33-stack-list-frames 0 50
+
+GDB: 33^done,stack=[frame={level="0",addr="0x0000000000400883",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="69"},frame={level="1",addr="0x00000000004007cc",func="main",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="56"}]
+34-stack-list-arguments --simple-values 0 50
+
+GDB: 34^done,stack-args=[frame={level="0",args=[{name="name",type="string",value="0x6032b0 \"chreast\""}]},frame={level="1",args=[{name="argc",type="int",value="3"},{name="argv",type="string *",value="0x7fffffffe6c8"}]}]
+35-var-update --all-values *
+
+GDB: 35^done,changelist=[]
+-stack-select-frame 0
+
+SENDING: Content-Length:832
+
+{"thread":"1","frames":[{"level":"0","addr":"0x0000000000400883","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"69","exists":true,"args":[{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var7","numchild":"1"}],"locals":[{"name":"i","type":"int","value":"0","objname":"var6","numchild":"0"}]},{"level":"1","addr":"0x00000000004007cc","func":"main","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"56","exists":true,"args":[{"name":"argc","type":"int","value":"3"},{"name":"argc","type":"int","value":"3"}],"locals":[{"name":"argc","type":"int","value":"3"},{"name":"i","type":"int","value":"0","objname":"var2","numchild":"0"},{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var3","numchild":"1"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:26
+
+{"command":"next","_id":7}
+36-exec-next 
+
+GDB: 36^running
+SENDING: Content-Length:51
+
+{"_seq":"36","state":"running","status":{},"_id":7}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x000000000040082d",func="vote",args=[{name="name",value="0x6032b0 \"chreast\""}],file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="70"},thread-id="1",stopped-threads="all",core="13"
+37-stack-list-frames 0 50
+
+GDB: 37^done,stack=[frame={level="0",addr="0x000000000040082d",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="70"},frame={level="1",addr="0x00000000004007cc",func="main",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="56"}]
+38-stack-list-arguments --simple-values 0 50
+
+GDB: 38^done,stack-args=[frame={level="0",args=[{name="name",type="string",value="0x6032b0 \"chreast\""}]},frame={level="1",args=[{name="argc",type="int",value="3"},{name="argv",type="string *",value="0x7fffffffe6c8"}]}]
+39-var-update --all-values *
+
+GDB: 39^done,changelist=[{name="var10",value="1",in_scope="true",type_changed="false",has_more="0"},{name="var8",value="1",in_scope="true",type_changed="false",has_more="0"},{name="var6",value="1",in_scope="true",type_changed="false",has_more="0"},{name="var2",value="1",in_scope="true",type_changed="false",has_more="0"}]
+-stack-select-frame 0
+
+SENDING: Content-Length:832
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000040082d","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"70","exists":true,"args":[{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var9","numchild":"1"}],"locals":[{"name":"i","type":"int","value":"1","objname":"var8","numchild":"0"}]},{"level":"1","addr":"0x00000000004007cc","func":"main","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"56","exists":true,"args":[{"name":"argc","type":"int","value":"3"},{"name":"argc","type":"int","value":"3"}],"locals":[{"name":"argc","type":"int","value":"3"},{"name":"i","type":"int","value":"1","objname":"var2","numchild":"0"},{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var3","numchild":"1"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:26
+
+{"command":"next","_id":8}
+40-exec-next 
+
+GDB: 40^running
+SENDING: Content-Length:51
+
+{"_seq":"40","state":"running","status":{},"_id":8}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x000000000040087e",func="vote",args=[{name="name",value="0x6032b0 \"chreast\""}],file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="74"},thread-id="1",stopped-threads="all",core="13"
+41-stack-list-frames 0 50
+
+GDB: 41^done,stack=[frame={level="0",addr="0x000000000040087e",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="74"},frame={level="1",addr="0x00000000004007cc",func="main",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="56"}]
+42-stack-list-arguments --simple-values 0 50
+
+GDB: 42^done,stack-args=[frame={level="0",args=[{name="name",type="string",value="0x6032b0 \"chreast\""}]},frame={level="1",args=[{name="argc",type="int",value="3"},{name="argv",type="string *",value="0x7fffffffe6c8"}]}]
+43-var-update --all-values *
+
+GDB: 43^done,changelist=[]
+-stack-select-frame 0
+
+SENDING: Content-Length:834
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000040087e","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"74","exists":true,"args":[{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var11","numchild":"1"}],"locals":[{"name":"i","type":"int","value":"1","objname":"var10","numchild":"0"}]},{"level":"1","addr":"0x00000000004007cc","func":"main","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"56","exists":true,"args":[{"name":"argc","type":"int","value":"3"},{"name":"argc","type":"int","value":"3"}],"locals":[{"name":"argc","type":"int","value":"3"},{"name":"i","type":"int","value":"1","objname":"var2","numchild":"0"},{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var3","numchild":"1"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:26
+
+{"command":"next","_id":9}
+44-exec-next 
+
+GDB: 44^running
+SENDING: Content-Length:51
+
+{"_seq":"44","state":"running","status":{},"_id":9}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x0000000000400883",func="vote",args=[{name="name",value="0x6032b0 \"chreast\""}],file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="69"},thread-id="1",stopped-threads="all",core="13"
+45-stack-list-frames 0 50
+
+GDB: 45^done,stack=[frame={level="0",addr="0x0000000000400883",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="69"},frame={level="1",addr="0x00000000004007cc",func="main",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="56"}]
+46-stack-list-arguments --simple-values 0 50
+
+GDB: 46^done,stack-args=[frame={level="0",args=[{name="name",type="string",value="0x6032b0 \"chreast\""}]},frame={level="1",args=[{name="argc",type="int",value="3"},{name="argv",type="string *",value="0x7fffffffe6c8"}]}]
+47-var-update --all-values *
+
+GDB: 47^done,changelist=[]
+-stack-select-frame 0
+
+SENDING: Content-Length:832
+
+{"thread":"1","frames":[{"level":"0","addr":"0x0000000000400883","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"69","exists":true,"args":[{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var7","numchild":"1"}],"locals":[{"name":"i","type":"int","value":"1","objname":"var6","numchild":"0"}]},{"level":"1","addr":"0x00000000004007cc","func":"main","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"56","exists":true,"args":[{"name":"argc","type":"int","value":"3"},{"name":"argc","type":"int","value":"3"}],"locals":[{"name":"argc","type":"int","value":"3"},{"name":"i","type":"int","value":"1","objname":"var2","numchild":"0"},{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var3","numchild":"1"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":10}
+48-exec-next 
+
+GDB: 48^running
+SENDING: Content-Length:52
+
+{"_seq":"48","state":"running","status":{},"_id":10}
+GDB: *running,thread-id="all"
+GDB: *stopped,reason="end-stepping-range",frame={addr="0x000000000040082d",func="vote",args=[{name="name",value="0x6032b0 \"chreast\""}],file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="70"},thread-id="1",stopped-threads="all",core="13"
+49-stack-list-frames 0 50
+
+GDB: 49^done,stack=[frame={level="0",addr="0x000000000040082d",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="70"},frame={level="1",addr="0x00000000004007cc",func="main",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="56"}]
+50-stack-list-arguments --simple-values 0 50
+
+GDB: 50^done,stack-args=[frame={level="0",args=[{name="name",type="string",value="0x6032b0 \"chreast\""}]},frame={level="1",args=[{name="argc",type="int",value="3"},{name="argv",type="string *",value="0x7fffffffe6c8"}]}]
+51-var-update --all-values *
+
+GDB: 51^done,changelist=[{name="var10",value="2",in_scope="true",type_changed="false",has_more="0"},{name="var8",value="2",in_scope="true",type_changed="false",has_more="0"},{name="var6",value="2",in_scope="true",type_changed="false",has_more="0"},{name="var2",value="2",in_scope="true",type_changed="false",has_more="0"}]
+-stack-select-frame 0
+
+SENDING: Content-Length:832
+
+{"thread":"1","frames":[{"level":"0","addr":"0x000000000040082d","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"70","exists":true,"args":[{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var9","numchild":"1"}],"locals":[{"name":"i","type":"int","value":"2","objname":"var8","numchild":"0"}]},{"level":"1","addr":"0x00000000004007cc","func":"main","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"56","exists":true,"args":[{"name":"argc","type":"int","value":"3"},{"name":"argc","type":"int","value":"3"}],"locals":[{"name":"argc","type":"int","value":"3"},{"name":"i","type":"int","value":"2","objname":"var2","numchild":"0"},{"name":"name","type":"string","value":"0x6032b0 \"chreast\"","objname":"var3","numchild":"1"}]}]}
+GDB: ^done
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":11}
+52-exec-next 
+
+GDB: 52^running
+SENDING: Content-Length:52
+
+{"_seq":"52","state":"running","status":{},"_id":11}
+GDB: *running,thread-id="all"
+GDB: ~"\nProgram"
+GDB: ~" received signal SIGSEGV, Segmentation fault.\n"
+GDB: ~"__strcmp_sse2_unaligned () at ../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S:31\n"
+GDB: &"31\t../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S: No such file or directory.\n"
+GDB: *stopped,reason="signal-received",signal-name="SIGSEGV",signal-meaning="Segmentation fault",frame={addr="0x00007ffff72b3e8a",func="__strcmp_sse2_unaligned",args=[],file="../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S",fullname="/build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S",line="31"},thread-id="1",stopped-threads="all",core="13"
+53-var-delete var11
+
+GDB: 53^done,ndeleted="1"
+54-var-delete var10
+
+GDB: 54^done,ndeleted="1"
+55-var-delete var9
+
+GDB: 55^done,ndeleted="1"
+56-var-delete var8
+
+GDB: 56^done,ndeleted="1"
+57-var-delete var7
+
+GDB: 57^done,ndeleted="1"
+58-var-delete var6
+
+GDB: 58^done,ndeleted="1"
+59-var-delete var3
+
+GDB: 59^done,ndeleted="1"
+60-var-delete var2
+
+GDB: 60^done,ndeleted="1"
+61-var-delete undefined
+
+GDB: 61^error,msg="Variable object not found"
+62-stack-list-frames 0 50
+
+GDB: 62^done,stack=[frame={level="0",addr="0x00007ffff72b3e8a",func="__strcmp_sse2_unaligned",file="../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S",fullname="/build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S",line="31"},frame={level="1",addr="0x000000000040084e",func="vote",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="70"},frame={level="2",addr="0x00000000004007cc",func="main",file="plurality.c",fullname="/home/ubuntu/pset3/plurality/plurality.c",line="56"}]
+63-stack-list-arguments --simple-values 0 50
+
+GDB: 63^done,stack-args=[frame={level="0",args=[]},frame={level="1",args=[{name="name",type="string",value="0x6032b0 \"chreast\""}]},frame={level="2",args=[{name="argc",type="int",value="3"},{name="argv",type="string *",value="0x7fffffffe6c8"}]}]
+64-stack-list-locals --thread 1 --frame 0 --simple-values
+
+GDB: 64^done,locals=[]
+65-var-update --all-values *
+
+GDB: 65^done,changelist=[]
+-stack-select-frame 0
+
+SENDING: Content-Length:773
+
+{"err":"signal","signal":{"name":"SIGSEGV","text":"Segmentation fault"},"thread":"1","frames":[{"level":"0","addr":"0x00007ffff72b3e8a","func":"__strcmp_sse2_unaligned","file":"../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S","fullname":"/build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/strcmp-sse2-unaligned.S","line":"31","exists":false,"args":[],"locals":[]},{"level":"1","addr":"0x000000000040084e","func":"vote","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"70","exists":true,"args":[null],"locals":[null]},{"level":"2","addr":"0x00000000004007cc","func":"main","file":"plurality.c","fullname":"/home/ubuntu/pset3/plurality/plurality.c","line":"56","exists":true,"args":[null,null],"locals":[null,null,null]}]}
+GDB: ^done
+PLUGIN: Content-Length:27
+
+{"command":"next","_id":12}
+66-exec-next 
+
+GDB: 66^running
+SENDING: Content-Length:52
+
+{"_seq":"66","state":"running","status":{},"_id":12}
+GDB: *running,thread-id="all"
+
+Child terminated with signal = 0xb (SIGSEGV)
+
+GDB: ~"\nProgram terminated with signal "
+GDB: ~"SIGSEGV, Segmentation fault.\n"
+GDB: ~"The program no longer exists.\n"
+GDB: =thread-group-exited,id="i1"
+GDB: *stopped,reason="exited-signalled",signal-name="SIGSEGV",signal-meaning="Segmentation fault"
+GDB server terminated with code 0 and signal null
