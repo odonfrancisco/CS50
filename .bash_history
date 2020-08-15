@@ -1,177 +1,3 @@
-make credit 
-./credit 
-./credit 
-make credit 
-./credit 
-./credit 
-make credit 
-./credit 
-make credit 
-./credit 
-make credit 
-./credit 
-./credit 
-./credit 
-./credit 
-make credit 
-make credit 
-make credit 
-./credit 
-make credit 
-./credit 
-make credit 
-./credit 
-./credit 
-./credit 
-make credit 
-./credit 
-make credit 
-./credit 
-make credit 
-./credit 
-371449635398431
-./credit 
-./credit 
-make credit 
-./credit 
-./credit 
-./credit 
-./credit 
-./credit 
-./credit 
-./credit 
-./credit 
-make credit 
-./credit 
-ls
-cd pset1
-ls
-cd credit/
-ls
-make credit
-make credit
-./credit
-./credit
-./credit
-make credit
-./credit
-./credit
-./credit
-make credit
-./credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-./credit
-./credit
-./credit
-./credit
-./credit
-./credit
-./credit
-./credit
-./credit
-check50 cs50/problems/2020/x/credit
-check50 cs50/problems/2020/x/credit -offline
-check50 cs50/problems/2020/x/credit --offline
-check50 cs50/problems/2020/x/credit -local
-check50 cs50/problems/2020/x/credit --local
-./credit
-make credit 
-check50 cs50/problems/2020/x/credit --local
-./credit
-./credit
-make credit 
-make credit 
-./credit
-style50 credit.c
-check50 cs50/problems/2020/x/credit --local
-make credit 
-check50 cs50/problems/2020/x/credit --local
-submit50 cs50/problems/2020/x/credit
-ls
-cd pset1
-ls
-mkdir hello
-cd hello/
-ls
-touch hello.c
-open hello.c 
-clang hello.c 
-ls
-./a.out 
-make hello
-ls
-rm a.out 
-ls
-make hello
-./hello 
-make hello
-./hello 
-submit50 cs50/problems/2020/x/hello
-ls
-cd pset,
-cd pset2
-ls
-make readibility 
-./readibility 
-make readibility 
-./readibility 
-./readibility 
-make readibility 
-./readibility 
-A large class of computational problems involve the determination of properties of graphs, digraphs, integers, arrays of integers, finite families of finite sets, boolean formulas and elements of other countable domains.
-./readibility 
-./readibility 
-A large class of computational problems involve the determination of properties of graphs, digraphs, integers, arrays of integers, finite families of finite sets, boolean formulas and elements of other countable domains.
-make readibility 
-./readibility 
-A large class of computational problems involve the determination of properties of graphs, digraphs, integers, arrays of integers, finite families of finite sets, boolean formulas and elements of other countable domains.
-./readibility 
-./readibility 
-./readibility 
-    One fish. Two fish. Red fish. Blue fish.
-./readibility 
-./readibility 
-./readibility 
-make readibility 
-./readibility 
-make readibility 
-make readibility 
-./readibility 
-./readibility 
-./readibility 
-make readibility 
-./readibility 
-check50 cs50/problems/2020/x/readability --local
-ls
-check50 cs50/problems/2020/x/readability --local
-make readability 
-./readability 
-make readability 
-./readability 
-submit50 cs50/problems/2020/x/readability
-ls
-cd pset2
-mkdir readability
-mkdir readibility
-mkdir substitution
-cd substitution/
-touch substitution.c
-ls
-open substitution.c 
-debug50 substitution.c 
-make substitution 
-cd pset2/substitution/
-ls
-make substitution 
-make substitution 
 help50 substitution.c 
 help50 make substitution.c 
 help50 make substitution
@@ -499,4 +325,223 @@ wget https://cdn.cs50.net/2019/fall/psets/3/tideman/tideman.c
 ls
 open tideman.c 
 cd
+git status
+git add .
+git commit -m"Starting Tideman assignment. This is what it starts me off with"
+git status
+cd pset3/tideman/
+ls
+make tideman 
+make tideman 
+make tideman 
+./tideman 
+./tideman emma watson
+./tideman emma watson
+./tideman emma watson
+make tideman 
+make tideman 
+make tideman 
+./tideman emma watson
+make tideman 
+./tideman emma watson
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson
+make tideman 
+./tideman emma watson
+make tideman 
+make tideman 
+make tideman 
+./tideman emma watson
+debug50 tideman.c
+debug50 tideman
+debug50 tideman
+debug50 tideman emma watson
+make tideman 
+debug50 tideman emma watson
+make tideman 
+./tideman 
+./tideman emma watson
+make tideman 
+make tideman 
+./tideman emma watson
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+ls
+cd pset3/tideman/
+ls
+make tideman 
+./tideman emma watson greed
+./tideman emma watson greed
+make tideman
+make tideman
+make tideman
+make tideman
+make tideman
+make tideman
+make tideman
+./tideman emma watson greed
+debug50 ./tideman emma watson greed
+make tideman
+./tideman emma watson greed
+debug50 ./tideman emma watson greed
+make tideman
+./tideman emma watson greed
+make tideman
+./tideman emma watson greed
+debug50 ./tideman emma watson greed
+make tideman
+make tideman
+./tideman emma watson greed
+make tideman
+./tideman emma watson greed
+make tideman
+make tideman
+./tideman emma watson greed
+dxo
+a
+e
+ae
+cd pset3/tideman/
+make tideman 
+make tideman 
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+make tideman 
+make tideman 
+help50 make tideman 
+make tideman 
+./tideman emma watson greed
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+./tideman emma watson greed
+make tideman 
+make tideman 
+make tideman 
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+ls pset3/tideman/
+./tideman Bob Charlie Alice
+cd pset3/tideman/
+./tideman Bob Charlie Alice
+cd pset3/tideman/
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+make tideman 
+make tideman 
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+./tideman Bob Charlie Alice
+cd pset3/tideman/
+./tideman Bob Charlie Alice
+make tideman 
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+make tideman 
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+check50 cs50/problems/2020/x/tideman
+check50 cs50/problems/2020/x/tideman --local
+make tideman 
+check50 cs50/problems/2020/x/tideman --local
+make tideman 
+check50 cs50/problems/2020/x/tideman --local
+make tideman 
+check50 cs50/problems/2020/x/tideman --local
+make tideman 
+make tideman 
+check50 cs50/problems/2020/x/tideman --local
+make tideman 
+check50 cs50/problems/2020/x/tideman --local
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+make tideman 
+./tideman Bob Charlie Alice
+cd
+ls
 git status
