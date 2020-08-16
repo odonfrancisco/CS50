@@ -1,54 +1,3 @@
-help50 substitution.c 
-help50 make substitution.c 
-help50 make substitution
-help50 make substitution
-make substitution 
-make substitution 
-make substitution 
-make substitution 
-make substitution 
-make substitution 
-make substitution 
-./substitution 
-ls
-make substitution 
-debug50 substitution
-debug50 substitution.c
-debug50 substitution
-make substitution 
-debug50 substitution
-./substitution 
-debug50 substitution
-debug50 substitution
-make substitution 
-debug50 ./substitution
-debug50 ./substitution
-debug50
-debug50 --help
-debug50 -help
-ls
-debug50 ./substitution
-debug50 ./substitution thoej
-cd ../readability/
-ls
-debug50 ./readability
-make readability 
-debug50 ./readability
-debug50 ./readability
-debug50 ./readability
-debug50 ./readability
-debug50 ./readability
-update50
-cs50
-help50
-update50
-debug50 ./readability
-reference50
-style50 readability
-style50 readability.c
-./readability 
-make readability 
-./readability 
 debug ./readability
 debug50 ./readability
 cd pset2/readability/
@@ -544,4 +493,14 @@ make tideman
 ./tideman Bob Charlie Alice
 cd
 ls
+git status
+git add .
+git commit -m"almost finished TIDEMAN but i can't get around one error with my locked array"
+git push origin master
+git push origin master
+cd pset3/tideman/
+ls
+make tideman 
+submit50 cs50/problems/2020/x/tideman
+cd
 git status
