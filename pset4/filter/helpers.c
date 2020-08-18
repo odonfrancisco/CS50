@@ -11,7 +11,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
         for(int q = 0; q < width; q++){
             int sum = image[i][q].rgbtBlue + 
                 image[i][q].rgbtGreen + image[i][q].rgbtRed;
-            int average = sum / 3;
+            int average = round(sum / 3.00);
             image[i][q].rgbtBlue = average;
             image[i][q].rgbtGreen = average;
             image[i][q].rgbtRed = average;
@@ -49,9 +49,9 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     for(int i = 0; i < height; i++){
         for(int q = 0; q < width; q++){
             
-            int blue_sum = 0;
-            int green_sum = 0;
-            int red_sum = 0;
+            float blue_sum = 0;
+            float green_sum = 0;
+            float red_sum = 0;
             int surrounding_blocks = 0;
             
             for(int y = i - 1; y < i + 2; y++){

@@ -1,64 +1,3 @@
-./substitution abcdefghijklmnopqrstuvwxyz
-./substitution abcdefghijklmnopqrstuvwxya
-./substitution abcdefghijklmnopqrstuvwxyA
-./substitution abcdefghijklmnopqrstuvwxyZ
-make substitution 
-make substitution 
-./substitution abcdefghijklmnopqrstuvwxyZ
-make substitution 
-./substitution abcdefghijklmnopqrstuvwxyZ
-./substitution abcdefghijklmnopqrstuvwxyz
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-./substitution abcDefghijklmnopqrstuVwxy
-./substitution abcDefghijklmnopqrstuVwxyz
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-make substitution 
-make substitution 
-make substitution 
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-make substitution 
-make substitution 
-make substitution 
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-make substitution 
-make substitution 
-./substitution abcDefghijklmnopqrstuVwxyz
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-make substitution 
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-make substitution 
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-make substitution 
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-make substitution 
-make substitution 
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
 make substitution 
 make substitution 
 ./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
@@ -550,6 +489,23 @@ git push origin master
 check50 cs50/problems/2020/x/filter/more --local
 cd pset4/filter/
 cd pset4/filter/
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+cd
+git status
+git add .
+git commit -m"JK JK hahaha i really thought i had it right but apparently check50 tells me blur works incorrectly for the middle pixel. error tells me blue is off by one digit so i'll have to see what that's about. Also getting similar error with my grayscale function so i'll have to work on those before i move onto edges. Thankfully my reflect function is doing quite alright."
+cd pset4/filter/
+ls
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
 check50 cs50/problems/2020/x/filter/more --local
 make filter 
 check50 cs50/problems/2020/x/filter/more --local
