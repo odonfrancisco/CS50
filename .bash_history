@@ -544,3 +544,16 @@ make filter
 ./filter -b images/yard.bmp blur.bmp
 cd
 git status
+git add .
+git commit -m"i impressed myself by getting the blur function correct on my first try h0ly m0ly"
+git push origin master
+check50 cs50/problems/2020/x/filter/more --local
+cd pset4/filter/
+cd pset4/filter/
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+cd
+git status
