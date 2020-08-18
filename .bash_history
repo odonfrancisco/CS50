@@ -1,13 +1,3 @@
-debug ./readability
-debug50 ./readability
-cd pset2/readability/
-ls
-debug50 ./readability
-debug50 ./readability
-cd ../substitution/
-debug50 ./substitution
-debug50 ./substitution
-debug50 ./substitution
 debug50 ./substitution nteuxknak
 make substitution 
 ./substitution 
@@ -502,5 +492,22 @@ cd pset3/tideman/
 ls
 make tideman 
 submit50 cs50/problems/2020/x/tideman
+cd
+git status
+git add .
+git status
+git commit -m"decided to submit assignment as is, only receiving a 17/18 but it will do for now. I'd rather move on to other things than to get stuck on one small aspect of my code for now"
+git push origin master
+ls
+mkdir pset4
+cd pset4
+ls
+wget https://cdn.cs50.net/2019/fall/psets/4/filter/more/filter.zip
+ls
+unzip filter.zip 
+ls
+rm filter.zip 
+cd filter/
+ls
 cd
 git status
