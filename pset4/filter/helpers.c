@@ -43,6 +43,39 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 // Blur image
 void blur(int height, int width, RGBTRIPLE image[height][width])
 {
+    RGBTRIPLE blurred_image[height][width];
+    
+    for(int i = 0; i < height; i++){
+        for(int q = 0; q < width; q++){
+            
+            int blue_sum = 0;
+            int green_sum = 0;
+            int red_sum = 0;
+            int surrounding_blocks = 0;
+            
+            for(int y = i - 1; y < i + 2; y++){
+                for(int x = q - 1; x < q + 2; x++){
+                    if(y >= 0 && y < height && x >= 0 && x < width){
+                        blue_sum += image[y][x].rgbtBlue;
+                        green_sum += image[y][x].rgbtGreen;
+                        red_sum += image[y][x].rgbtRed;
+                        surrounding_blocks++;
+                    }
+
+                }
+            }
+            
+            int blurred_blue = blue_sum / surrounding_blocks;
+            int blurred_green = green_sum / surrounding_blocks;
+            int blurred_red = red_sum / surrounding_blocks;
+            
+            blurred_image[i][q].rgbtBlue = blurred_blue;
+            blurred_image[i][q].rgbtGreen = blurred_green;
+            blurred_image[i][q].rgbtRed = blurred_red;
+        }
+    }
+    
+    memcpy(image, blurred_image, height * width * sizeof(RGBTRIPLE));
     return;
 }
 

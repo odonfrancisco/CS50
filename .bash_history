@@ -533,3 +533,14 @@ make filter
 ./filter -r images/yard.bmp reverse.bmp
 cd
 git status
+git add .
+git commit -m"Completed grayscale & reflect function inside helpers.c. Now gotta work on blur and edges. edges will be the tough one which i'm excited for"
+cd pset4/f
+cd pset4/filter/
+ls
+make filter 
+make filter 
+make filter 
+./filter -b images/yard.bmp blur.bmp
+cd
+git status
