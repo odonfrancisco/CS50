@@ -1,50 +1,3 @@
-debug50 ./substitution nteuxknak
-make substitution 
-./substitution 
-./substitution tahejbntb
-./substitution tahejbnt
-make substitution 
-./substitution tahejbnt
-./substitution abcdefghijklmnopqrstuvwxyz
-make substitution 
-make substitution 
-./substitution abcdefghijklmnopqrstuvwxyz
-./substitution abcdefghijklmnopqrstuvw.yz
-make substitution 
-./substitution abcdefghijklmnopqrstuvw.yz
-./substitution abcdefghijklmnopqrstuvwoyz
-make substitution 
-debug50 ./substitution abcdefghijklmnopqrstuvwoyz
-make substitution 
-make substitution 
-make substitution 
-./substitution abcdefghijklmnopqrstuvwoyz
-debug50 ./substitution abcdefghijklmnopqrstuvwoyz
-make substitution 
-debug50 ./substitution abcdefghijklmnopqrstuvwoyz
-debug50 ./substitution abcdefghijklmnopqrstuvwoyz
-make substitution 
-debug50 ./substitution abcdefghijklmnopqrstuvwoyz
-debug50 ./substitution abcdefghijklmnopqrstuvwxyz
-make substitution 
-make substitution 
-make substitution 
-./substitution abcdefghijklmnopqrstuvwxyz
-./substitution abcdefghijklmnopqrstuvwxyoz
-./substitution abcdefghijklmnopqrstuvwxoz
-make substitution 
-./substitution abcdefghijklmnopqrstuvwxoz
-./substitution abcdefghijklmnopqrstuvwxyz
-make substitution 
-./substitution abcdefghijklmnopqrstuvwxyz
-make substitution 
-./substitution abcdefghijklmnopqrstuvwxyz
-./substitution abcdefghijklmnopqrstuvwxz
-make substitution 
-./substitution abcdefghijklmnopqrstuvwxz
-make substitution 
-./substitution abcdefghijklmnopqrstuvwxz
-./substitution abcdefghijklmnopqrstuvwxpz
 ./substitution abcdefghijklmnopqrstuvwxyz
 ./substitution abcdefghijklmnopqrstuvwxya
 ./substitution abcdefghijklmnopqrstuvwxyA
@@ -509,5 +462,74 @@ ls
 rm filter.zip 
 cd filter/
 ls
+cd
+git status
+git add .
+git commit -m"Starting Filter from pset4"
+ls pset4/filter/
+cd pset4/filter/
+open bmp.h 
+lss
+ls
+open filter.c 
+open helpers.
+ls
+open helpers.h
+ls
+open helpers.c
+ls
+open Makefile
+make filter 
+ls
+$ ./filter -g images/yard.bmp out.bmp
+./filter -g images/yard.bmp out.bmp
+ls
+open out.bmp 
+cd images/
+ls
+open yard.bmp 
+cd ..
+ls
+make filter 
+make filter 
+make filter 
+make filter 
+make filter 
+./filter -g images/yard.bmp out.bmp
+make filter 
+./filter -g images/yard.bmp out.bmp
+make filter 
+cd pset4/filter/
+make filter 
+./filter -g images/yard.bmp out.bmp
+ls
+open out.bmp 
+make filter 
+./filter -g images/yard.bmp out.bmp
+open out.bmp 
+ls
+open images/yard.bmp 
+make filter 
+make filter 
+./filter -g images/yard.bmp out.bmp
+open out.bmp 
+ls
+open images/yard.bmp 
+./filter -r images/yard.bmp out.bmp
+make filter 
+./filter -r images/yard.bmp out.bmp
+make filter 
+make filter 
+make filter 
+./filter -r images/yard.bmp out.bmp
+./filter -r images/yard.bmp out.bmp
+make filter 
+./filter -r images/yard.bmp out.bmp
+make filter 
+make filter 
+./filter -r images/yard.bmp out.bmp
+./filter -r images/yard.bmp reverse.bmp
+make filter 
+./filter -r images/yard.bmp reverse.bmp
 cd
 git status
