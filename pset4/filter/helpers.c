@@ -80,8 +80,79 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     return;
 }
 
+void assign_gx_gy(int gx[3][3], int gy[3][3]);
+
 // Detect edges
 void edges(int height, int width, RGBTRIPLE image[height][width])
 {
+    int gx[3][3] = { {-1, 0, 1}, {-2, 0, 2}, {-1, 0, 1} };
+    int gy[3][3] = { {-1, -2, -1}, {0, 0, 0}, {1, 2, 1} };
+    
+    RGBTRIPLE edged_image[height][width];
+    
+    // assign_gx_gy(gx, gy);
+    
+    for(int i = 0; i < height; i++){
+        for(int q = 0; q < width; q++){
+            
+            float blue_sum_gx = 0;
+            float green_sum_gx = 0;
+            float red_sum_gx = 0;
+            
+            float blue_sum_gy = 0;
+            float green_sum_gy = 0;
+            float red_sum_gy = 0;
+            
+            for(int y = i - 1; y < i + 2; y++){
+                for(int x = q - 1; x < q + 2; x++){
+                    if(y >= 0 && y < height && x >= 0 && x < width){
+                        // Means coordinates are within boundaries of image
+                        int blue_pix = image[y][x].rgbtBlue;
+                        int green_pix = image[y][x].rgbtGreen;
+                        int red_pix = image[y][x].rgbtRed;
+                        
+                        blue_sum_gx += gx[y - i+1][x - q+1] * blue_pix;
+                        green_sum_gx += gx[y - i+1][x - q+1] * green_pix;
+                        red_sum_gx += gx[y - i+1][x - q+1] * red_pix;
+                        
+                        blue_sum_gy += gy[y - i+1][x - q+1] * blue_pix;
+                        green_sum_gy += gy[y - i+1][x - q+1] * green_pix;
+                        red_sum_gy += gy[y - i+1][x - q+1] * red_pix;
+                        
+                    } else {
+                        // Means this is a black border
+                    }
+
+                }
+            }
+            
+            
+            float new_blue = pow(blue_sum_gx, 2) * pow(blue_sum_gy, 2);
+            if(new_blue > 255)
+                new_blue = 255;
+            
+            float new_green = pow(green_sum_gx, 2) * pow(green_sum_gy, 2);
+            if(new_green > 255)
+                new_green = 255;
+                
+            float new_red = pow(red_sum_gx, 2) * pow(red_sum_gy, 2);
+            if(new_red > 255)
+                new_red = 255;
+            
+            edged_image[i][q].rgbtBlue = new_blue;
+            edged_image[i][q].rgbtGreen = new_green;
+            edged_image[i][q].rgbtRed = new_red;
+            
+            
+            // assign_gx_gy(gx, gy);
+        }
+    }
+    
+    memcpy(image, edged_image, height * width * sizeof(RGBTRIPLE));
     return;
 }
+
+// void assign_gx_gy(int gx[3][3], int gy[3][3]){
+//     gx = { [-1, 0, 1], [-2, 0, 2], [-1, 0, 1] };
+//     gy = { [-1, -2, -1], [0, 0, 0], [1, 2, 1] };
+// }

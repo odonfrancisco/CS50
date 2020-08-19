@@ -513,3 +513,24 @@ make filter
 check50 cs50/problems/2020/x/filter/more --local
 cd
 git status
+git add .
+git commit -m"Grayscale & blur working perfectly now. It turned out that because i was setting everything to int, the decimal place wasn't being taken into account which is why my results were off by one digit"
+ls pset4/filter/
+cd pset4/filter/
+make filter 
+make filter 
+make filter 
+make filter 
+make filter 
+./filter -f images/yard.bmp filter.bmp
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+cd
+git status
