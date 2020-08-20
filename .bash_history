@@ -1,44 +1,3 @@
-make substitution 
-make substitution 
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-make substitution 
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-make substitution 
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-make substitution 
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-make substitution 
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-make substitution 
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-check50 cs50/problems/2020/x/substitution -local
-check50 cs50/problems/2020/x/substitution --local
-check50 cs50/problems/2020/x/substitution --local
-check50 cs50/problems/2020/x/substitution --local
-./substitution ahhhhhhhoooooooooo
-./substitution ahhhhhhhooooooooooeoo
-./substitution ituhbbahhhhhhhooooooooooeoo
-./substitution ituhbbahhhhhhhooooooooooeo
-./substitution ituhbbahhhhhhhoooo ooooooeo
-./substitution ituhbbahhhhhhhoooooooooeo
-./substitution ituhbbahhhhhhhoooooooooeoo
-./substitution ituhbbahhhhhhhoooooooooeoe
-./substitution BBCCEFGHIJKLMNOPQRSTUVWXYZ
-make substitution 
-./substitution BBCCEFGHIJKLMNOPQRSTUVWXYZ
-./substitution BBCCEFGHIJKLMNOPQRSTUVWXYZ
-make substitution 
-./substitution BBCCEFGHIJKLMNOPQRSTUVWXYZ
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-./substitution pyfgcrlaoeuihhtnsqjkxbmmvz
-./substitution BBCCEFGHIJKLMNOPQRSTUVWXYZ
-make substitution 
-./substitution BBCCEFGHIJKLMNOPQRSTUVWXYZ
-./substitution pyfgcrlaoeuihhtnsqjkxbmmvz
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
 ./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
 ./substitution BBCCEFGHIJKLMNOPQRSTUVWXYZ
 make substitution 
@@ -532,5 +491,37 @@ make filter
 ./filter -e images/yard.bmp edged.bmp
 make filter 
 ./filter -e images/yard.bmp edged.bmp
+cd
+git status
+git add . 
+git commit -m"working on edge detection. It's producing an image that's definitely on the right track but still have a lot of work to do to get it completely right."
+git push origin master
+git help
+git diff
+cd pset4/filter/
+ls
+check50 cs50/problems/2020/x/filter/more --local
+check50 cs50/problems/2020/x/filter/more --local
+make 
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+check50 cs50/problems/2020/x/filter/more --local
 cd
 git status

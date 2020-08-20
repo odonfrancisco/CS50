@@ -95,16 +95,17 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     for(int i = 0; i < height; i++){
         for(int q = 0; q < width; q++){
             
-            float blue_sum_gx = 0;
-            float green_sum_gx = 0;
-            float red_sum_gx = 0;
+            int blue_sum_gx = 0;
+            int green_sum_gx = 0;
+            int red_sum_gx = 0;
             
-            float blue_sum_gy = 0;
-            float green_sum_gy = 0;
-            float red_sum_gy = 0;
+            int blue_sum_gy = 0;
+            int green_sum_gy = 0;
+            int red_sum_gy = 0;
             
             for(int y = i - 1; y < i + 2; y++){
                 for(int x = q - 1; x < q + 2; x++){
+                    
                     if(y >= 0 && y < height && x >= 0 && x < width){
                         // Means coordinates are within boundaries of image
                         int blue_pix = image[y][x].rgbtBlue;
@@ -127,15 +128,15 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             }
             
             
-            float new_blue = pow(blue_sum_gx, 2) * pow(blue_sum_gy, 2);
+            int new_blue = pow(blue_sum_gx, 2) + pow(blue_sum_gy, 2);
             if(new_blue > 255)
                 new_blue = 255;
             
-            float new_green = pow(green_sum_gx, 2) * pow(green_sum_gy, 2);
+            int new_green = pow(green_sum_gx, 2) + pow(green_sum_gy, 2);
             if(new_green > 255)
                 new_green = 255;
                 
-            float new_red = pow(red_sum_gx, 2) * pow(red_sum_gy, 2);
+            int new_red = pow(red_sum_gx, 2) + pow(red_sum_gy, 2);
             if(new_red > 255)
                 new_red = 255;
             
