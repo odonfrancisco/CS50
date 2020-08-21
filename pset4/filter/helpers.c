@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <stdbool.h>
 
 // Convert image to grayscale
 void grayscale(int height, int width, RGBTRIPLE image[height][width])
@@ -89,10 +90,18 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     int gy[3][3] = { {-1, -2, -1}, {0, 0, 0}, {1, 2, 1} };
     
     RGBTRIPLE edged_image[height][width];
+    bool console = false;
     
     // assign_gx_gy(gx, gy);
     
     for(int i = 0; i < height; i++){
+        
+        if(i > 74 || i < 80){
+            console = true;
+        } else {
+            console = false;
+        }
+        
         for(int q = 0; q < width; q++){
             
             int blue_sum_gx = 0;
@@ -112,6 +121,15 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                         int green_pix = image[y][x].rgbtGreen;
                         int red_pix = image[y][x].rgbtRed;
                         
+                        // if(console){
+                        //     printf("CENTER PIXEL: %i\n", image[i][q].rgbtBlue);
+                        //     printf("TARGETED PIXEL: %i\n", blue_pix);
+                        //     printf("gx & gy for y: %i & x: %i \n", y, x);
+                        //     printf("gx = %i\n", gx[y - i+1][x - q+1]);
+                        //     printf("gy = %i\n", gy[y - i+1][x - q+1]);
+                            
+                        // }
+                        
                         blue_sum_gx += gx[y - i+1][x - q+1] * blue_pix;
                         green_sum_gx += gx[y - i+1][x - q+1] * green_pix;
                         red_sum_gx += gx[y - i+1][x - q+1] * red_pix;
@@ -123,22 +141,34 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                     } else {
                         // Means this is a black border
                     }
+                    
 
                 }
             }
             
+            // if(console){
+            //     printf("blue_sum_gx: %i\n", blue_sum_gx);
+            //     printf("blue_sum_gy: %i\n", blue_sum_gy);
+            // }
             
-            int new_blue = pow(blue_sum_gx, 2) + pow(blue_sum_gy, 2);
+            
+            int new_blue = sqrt(pow(blue_sum_gx, 2) + pow(blue_sum_gy, 2));
             if(new_blue > 255)
                 new_blue = 255;
+            if(new_blue < 0)
+                new_blue = 0;
             
-            int new_green = pow(green_sum_gx, 2) + pow(green_sum_gy, 2);
+            int new_green = sqrt(pow(green_sum_gx, 2) + pow(green_sum_gy, 2));
             if(new_green > 255)
                 new_green = 255;
+            if(new_green < 0)
+                new_green = 0;
                 
-            int new_red = pow(red_sum_gx, 2) + pow(red_sum_gy, 2);
+            int new_red = sqrt(pow(red_sum_gx, 2) + pow(red_sum_gy, 2));
             if(new_red > 255)
                 new_red = 255;
+            if(new_red < 0)
+                new_red = 0;
             
             edged_image[i][q].rgbtBlue = new_blue;
             edged_image[i][q].rgbtGreen = new_green;

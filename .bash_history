@@ -1,32 +1,3 @@
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-./substitution BBCCEFGHIJKLMNOPQRSTUVWXYZ
-make substitution 
-make substitution 
-./substitution BBCCEFGHIJKLMNOPQRSTUVWXYZ
-./substitution pyfgcrlaoeuidhtnsqjkxbmwvz
-check50 cs50/problems/2020/x/substitution
-check50 cs50/problems/2020/x/substitution --local
-submit50 cs50/problems/2020/x/substitution
-cd
-l
-ls
-mkdir pset3
-ls
-cd pset3
-ls
-mkdir lectShort
-cd lectShort/
-touch recursion.c
-open recursion.c 
-make recursion 
-make recursion 
-./recursion 
-make recursion 
-./recursion 
-make recursion 
-./recursion 
-make recursion 
-./recursion 
 ./recursion 
 ./recursion 
 ./recursion 
@@ -512,6 +483,46 @@ make filter
 ./filter -e images/yard.bmp edged.bmp
 make filter 
 ./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+check50 cs50/problems/2020/x/filter/more --local
+cd
+git status
+git add .
+git commit -m"I'm sort of seeing an issue with my code, where a lot of final pixel calculations are waaaaay over 255. so i need to figure out exactly where i'm going wrong. Will focus more on this thurs and friday night"
+cd pset4/filter/
+ls
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
+make filter 
+make filter 
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+./filter -e images/yard.bmp edged.bmp
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
 make filter 
 ./filter -e images/yard.bmp edged.bmp
 make filter 
