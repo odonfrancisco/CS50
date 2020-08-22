@@ -81,8 +81,6 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     return;
 }
 
-void assign_gx_gy(int gx[3][3], int gy[3][3]);
-
 // Detect edges
 void edges(int height, int width, RGBTRIPLE image[height][width])
 {
@@ -91,8 +89,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
     
     RGBTRIPLE edged_image[height][width];
     bool console = false;
-    
-    // assign_gx_gy(gx, gy);
     
     for(int i = 0; i < height; i++){
         
@@ -121,15 +117,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
                         int green_pix = image[y][x].rgbtGreen;
                         int red_pix = image[y][x].rgbtRed;
                         
-                        // if(console){
-                        //     printf("CENTER PIXEL: %i\n", image[i][q].rgbtBlue);
-                        //     printf("TARGETED PIXEL: %i\n", blue_pix);
-                        //     printf("gx & gy for y: %i & x: %i \n", y, x);
-                        //     printf("gx = %i\n", gx[y - i+1][x - q+1]);
-                        //     printf("gy = %i\n", gy[y - i+1][x - q+1]);
-                            
-                        // }
-                        
                         blue_sum_gx += gx[y - i+1][x - q+1] * blue_pix;
                         green_sum_gx += gx[y - i+1][x - q+1] * green_pix;
                         red_sum_gx += gx[y - i+1][x - q+1] * red_pix;
@@ -145,11 +132,6 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
 
                 }
             }
-            
-            // if(console){
-            //     printf("blue_sum_gx: %i\n", blue_sum_gx);
-            //     printf("blue_sum_gy: %i\n", blue_sum_gy);
-            // }
             
             
             int new_blue = round(sqrt(pow(blue_sum_gx, 2) + pow(blue_sum_gy, 2)));
@@ -174,16 +156,9 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             edged_image[i][q].rgbtGreen = new_green;
             edged_image[i][q].rgbtRed = new_red;
             
-            
-            // assign_gx_gy(gx, gy);
         }
     }
     
     memcpy(image, edged_image, height * width * sizeof(RGBTRIPLE));
     return;
 }
-
-// void assign_gx_gy(int gx[3][3], int gy[3][3]){
-//     gx = { [-1, 0, 1], [-2, 0, 2], [-1, 0, 1] };
-//     gy = { [-1, -2, -1], [0, 0, 0], [1, 2, 1] };
-// }

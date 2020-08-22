@@ -506,3 +506,5 @@ make filter
 check50 cs50/problems/2020/x/filter/more --local
 cd
 git status
+git add .
+git commit -m"Ok so it works well now. What i'm confused about is that i didn't add the cases for when a pixel is on the edge yet it still works fine.... something i'll have to wrap my head around"
