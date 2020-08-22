@@ -104,13 +104,13 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
         
         for(int q = 0; q < width; q++){
             
-            int blue_sum_gx = 0;
-            int green_sum_gx = 0;
-            int red_sum_gx = 0;
+            float blue_sum_gx = 0;
+            float green_sum_gx = 0;
+            float red_sum_gx = 0;
             
-            int blue_sum_gy = 0;
-            int green_sum_gy = 0;
-            int red_sum_gy = 0;
+            float blue_sum_gy = 0;
+            float green_sum_gy = 0;
+            float red_sum_gy = 0;
             
             for(int y = i - 1; y < i + 2; y++){
                 for(int x = q - 1; x < q + 2; x++){
@@ -152,19 +152,19 @@ void edges(int height, int width, RGBTRIPLE image[height][width])
             // }
             
             
-            int new_blue = sqrt(pow(blue_sum_gx, 2) + pow(blue_sum_gy, 2));
+            int new_blue = round(sqrt(pow(blue_sum_gx, 2) + pow(blue_sum_gy, 2)));
             if(new_blue > 255)
                 new_blue = 255;
             if(new_blue < 0)
                 new_blue = 0;
             
-            int new_green = sqrt(pow(green_sum_gx, 2) + pow(green_sum_gy, 2));
+            int new_green = round(sqrt(pow(green_sum_gx, 2) + pow(green_sum_gy, 2)));
             if(new_green > 255)
                 new_green = 255;
             if(new_green < 0)
                 new_green = 0;
                 
-            int new_red = sqrt(pow(red_sum_gx, 2) + pow(red_sum_gy, 2));
+            int new_red = round(sqrt(pow(red_sum_gx, 2) + pow(red_sum_gy, 2)));
             if(new_red > 255)
                 new_red = 255;
             if(new_red < 0)

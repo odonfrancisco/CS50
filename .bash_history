@@ -1,44 +1,3 @@
-./recursion 
-./recursion 
-./recursion 
-./recursion 
-cd pset3
-ls
-mkdir plurality
-cd plurality/
-wget https://cdn.cs50.net/2019/fall/psets/3/plurality/plurality.c
-ls
-open plurality.c 
-l
-ls
-git
-git init
-git commit -m"first commit. includes pset1, pset2 & part of pset3
-"
-git config --global user.email "francisco.odon11@gmail.com"
-git commit -m"first commit. includes pset1, pset2 & part of pset3"
-git config --global user.name "Odon"
-git commit -m"first commit. includes pset1, pset2 & part of pset3"
-git commit
-git remote add origin https://github.com/odonfrancisco/CS50.git
-git push origin master
-git push -u origin master
-git 
-git add .
-git commit -m"first commit including pset1, pset2 & part of pset3"
-git push origin master
-ls
-cd pset3
-ls
-cd plurality/
-ls
-make plurality 
-./plurality 
-./plurality emma robert
-make plurality 
-./plurality emma robert
-make plurality 
-make plurality 
 ./plurality emma robert
 ./plurality emma robert
 make plurality 
@@ -533,6 +492,17 @@ make filter
 ./filter -e images/yard.bmp edged.bmp
 make filter 
 ./filter -e images/yard.bmp edged.bmp
+check50 cs50/problems/2020/x/filter/more --local
+cd
+git status
+git add .
+git commit -m"I'M A FOOLgit add .! I wasn't taking the sqareroot of the sum of gx^2 & gy^2. Crazy how i consider myself detail oriented yet didn't catch this not-so-seemingly minor detail in the instructions hahhaa. Good shit though, i'm waaaaaaay closer to the solution. Image and resulting pixels are getting closer"
+git push origin master
+cd pset4/filter/
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
+check50 cs50/problems/2020/x/filter/more --local
+make filter 
 check50 cs50/problems/2020/x/filter/more --local
 cd
 git status
